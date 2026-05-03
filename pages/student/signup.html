@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMIT Student Portal - Saylani Welfare Int Trust</title>
     <link rel="stylesheet" href="../../css/student/signup.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/smit.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <img
+        src="../../assets/images/smit.png"
+        alt="smit logo"
+        width="120px"
+        height="75px"
+      />
+      <div>Student Portal</div>
+      <div class="tabs">
+        <div id="loginRoute" onclick="">Login</div>
+        <div id="signUpRoute" onclick="">Create Password</div>
+      </div>
+      <div id="signUpForm">
+        <div class="content">
+          <div>Create a Password</div>
+          <div>
+            Kindly provide the CNIC number and DOB used during SMIT course
+            registration.
+          </div>
+        </div>
+        <form action="javascript:void(0)">
+          <div>
+            <label for="cnic">CNIC *</label>
+            <input type="number" name="cnic" id="cnic" required />
+          </div>
+          <div>
+            <label for="dob">DOB *</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+          <div>
+            <label for="password">Password *</label>
+            <div class="passwordBox">
+              <input type="password" name="password" id="password" required />
+              <button type="button" class="passwordBtns">
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-regular fa-eye-slash"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
