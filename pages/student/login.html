@@ -19,5 +19,46 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <img
+        src="../../assets/images/smit.png"
+        alt="smit logo"
+        width="120px"
+        height="75px"
+      />
+      <div>Student Portal</div>
+      <div class="tabs">
+        <div id="loginRoute" onclick="">Login</div>
+        <div id="signUpRoute" onclick="">Create Password</div>
+      </div>
+      <div id="signUpForm">
+        <div class="content">
+          <div>Login</div>
+          <div>
+            Kindly provide the CNIC number and password used during SMIT course
+            registration.
+          </div>
+        </div>
+        <form action="javascript:void(0)">
+          <div>
+            <label for="cnic">CNIC *</label>
+            <input type="number" name="cnic" id="cnic" required />
+          </div>
+          <div>
+            <label for="password">Password *</label>
+            <div class="passwordBox">
+              <input type="password" name="password" id="password" required />
+              <button type="button" class="passwordBtns">
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-regular fa-eye-slash"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+      <button id="teacherLogin">Login as teacher</button>
+    </div>
+  </body>
 </html>
