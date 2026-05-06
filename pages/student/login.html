@@ -29,8 +29,8 @@
       />
       <div>Student Portal</div>
       <div class="tabs">
-        <div id="loginRoute" onclick="">Login</div>
-        <div id="signUpRoute" onclick="">Create Password</div>
+        <div id="loginRoute" onclick="loginRoute()">Login</div>
+        <div id="signUpRoute" onclick="signUpRoute()">Create Password</div>
       </div>
       <div id="signUpForm">
         <div class="content">
@@ -40,7 +40,7 @@
             registration.
           </div>
         </div>
-        <form action="javascript:void(0)">
+        <div id="form">
           <div>
             <label for="cnic">CNIC *</label>
             <input type="number" name="cnic" id="cnic" required />
@@ -55,10 +55,11 @@
               </button>
             </div>
           </div>
-          <button type="submit">LOGIN</button>
-        </form>
+          <button>LOGIN</button>
+        </div>
       </div>
       <button id="teacherLogin">Login as teacher</button>
     </div>
   </body>
+  <script src="../../js/student/login.js"></script>
 </html>
